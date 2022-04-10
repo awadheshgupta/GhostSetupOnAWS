@@ -57,7 +57,7 @@ To Do :
     
 
 
-*Reference 
+*Reference :
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html
 https://github.com/nathanpeck/aws-cloudformation-fargate
 
