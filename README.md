@@ -7,7 +7,6 @@ Repository contains CloudFormation template and other resources to deploy Ghost 
  
 Deploy Ghost service to the AWS cloud using AWS Fargate
 1. Create ECR repository : 
-    # ECR cloudformation stack
     $ ECR_STACK_NAME="ghost-on-aws-ecr"
     $ REGION="us-west-1"
     $ TAGS="Project=DeployGhostOnAWS"
