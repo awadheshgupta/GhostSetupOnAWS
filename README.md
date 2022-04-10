@@ -2,8 +2,7 @@
 
 # Overview
 Repository contains CloudFormation template and other resources to deploy Ghost blog stack in AWS Fargate.
-
-Architecture: 
+ 
  ![](screenshots/Architecture_ghost.jpg)
  
 Deploy Ghost service to the AWS cloud using AWS Fargate
@@ -23,8 +22,40 @@ Deploy Ghost service to the AWS cloud using AWS Fargate
    $ ./script/build-image.sh
 
     ![](screenshots/build-image-cmd.png)
+    
+    ![](screenshots/ghost-image-aws-ui.png)
 
 3. Create VPC and deploy Ghost services
+   $ ./scripts/deploy-ghost-on-aws.sh
    
     ![](screenshots/deploy_ghost_aws.png)
+    
+    ![](screenshots/stack_screenshots.png)
+    
+    The template will create:
+
+    one VPC
+    Two public subnet (To manage DR)
+    Two private subnet (To manage DR)
+    one InternetGateway (To have connectivity to internet with VPC)
+    NatGateways (To communicate with private subnets to the internet via the public subnet)
+    SecurityGroups
+    Elastic Load Balancers
+    IAM Role
+    
+    Get The VPC external URL :
+
+    ![](screenshots/vpc_external_url.png)
+    
+    # Finally Ghost homepage
+    ![](screenshots/ghost_homepage.png)
+
+
+To Do :
+1. Add RDS instance to manage data externally.
+2. Create CI pipeline starting with source GIT
+3. Setting Monitoring stacks
+    
+    
+   
 
