@@ -33,14 +33,14 @@ Deploy Ghost service to the AWS cloud using AWS Fargate
     
     The template will create:
 
-    one VPC
-    Two public subnet (To manage DR)
-    Two private subnet (To manage DR)
-    one InternetGateway (To have connectivity to internet with VPC)
-    NatGateways (To communicate with private subnets to the internet via the public subnet)
-    SecurityGroups
-    Elastic Load Balancers
-    IAM Role
+    one VPC,
+    Two public subnet (To manage DR),
+    Two private subnet (To manage DR),
+    one InternetGateway (To have connectivity to internet with VPC),
+    NatGateways (To communicate with private subnets to the internet via the public subnet),
+    SecurityGroups,
+    Elastic Load Balancers,
+    IAM Role,
     
     Get The VPC external URL :
 
