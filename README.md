@@ -55,6 +55,11 @@ To Do :
 2. Create CI pipeline starting with source GIT
 3. Setting Monitoring stacks
     
-    
+
+
+*Reference 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html
+https://github.com/nathanpeck/aws-cloudformation-fargate
+
    
 
