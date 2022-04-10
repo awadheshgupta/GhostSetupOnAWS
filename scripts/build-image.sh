@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#Script perform following :
+#1. loggin to aws
+#2. Build docker image
+#3. Tag image with ECR 
+#4. Push to ECR
 
 #aws loggin set
 aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin <ECR ARN>

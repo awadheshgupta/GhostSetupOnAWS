@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Deploy script to run ecr, vpc and service template.
 
 # check if required input was provided
 if [ $# == 0 ] | [ -z "$0" ]; then
